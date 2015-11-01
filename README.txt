@@ -11,4 +11,4 @@ Your photo library must be reachable over the filesystem from the machine on whi
 
 Configuration
 =============
-The plugin needs to know where your Photo Library file is.  The default ("~/Pictures/Fotos Library.photoslibrary") is probably not working in all cases. So, please enter in the correct path in the plugin's settings dialog.
+The plugin needs to know where your Photo Library file is.  The default ("~/Pictures/Fotos Library.photoslibrary") is probably not working in all cases. So, please enter the correct path in the plugin's settings dialog.
