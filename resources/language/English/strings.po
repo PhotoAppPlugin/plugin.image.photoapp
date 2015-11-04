@@ -1,0 +1,85 @@
+# Kodi Media Center language file
+# Addon Name: Photo App
+# Addon id: plugin.image.photoapp
+# Addon Provider: stonebug
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Addons\n"
+"Report-Msgid-Bugs-To: PhotoApp.KodiPlugin@stonebug.com\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Claude Marksteiner\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "Moments"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Albums"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Sildeshows"
+msgstr ""
+
+msgctxt "#34000"
+msgid "No items"
+msgstr ""
+
+msgctxt "#35000"
+msgid "General"
+msgstr ""
+
+msgctxt "#35010"
+msgid "Photo-Library"
+msgstr ""
+
+msgctxt "#35100"
+msgid "View"
+msgstr ""
+
+msgctxt "#35110"
+msgid "Sort method"
+msgstr ""
+
+msgctxt "#35111"
+msgid "None"
+msgstr ""
+
+msgctxt "#35112"
+msgid "Name"
+msgstr ""
+
+msgctxt "#35120"
+msgid "Sort direction"
+msgstr ""
+
+msgctxt "#35121"
+msgid "Ascending"
+msgstr ""
+
+msgctxt "#35122"
+msgid "Descending"
+msgstr ""
+
+msgctxt "#35130"
+msgid "View"
+msgstr ""
+
+msgctxt "#35131"
+msgid "List"
+msgstr ""
+
+msgctxt "#35132"
+msgid "Thumbnail"
+msgstr ""
+
+msgctxt "#35133"
+msgid "Picture"
+msgstr ""
