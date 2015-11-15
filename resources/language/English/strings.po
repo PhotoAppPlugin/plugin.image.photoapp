@@ -28,58 +28,62 @@ msgctxt "#30002"
 msgid "Sildeshows"
 msgstr ""
 
-msgctxt "#34000"
+msgctxt "#30100"
 msgid "No items"
 msgstr ""
 
-msgctxt "#35000"
+msgctxt "#30200"
 msgid "General"
 msgstr ""
 
-msgctxt "#35010"
+msgctxt "#30210"
 msgid "Photo-Library"
 msgstr ""
 
-msgctxt "#35100"
+msgctxt "#30220"
+msgid "Make a local copy of the Photo-Library"
+msgstr ""
+
+msgctxt "#30300"
 msgid "View"
 msgstr ""
 
-msgctxt "#35110"
+msgctxt "#30310"
 msgid "Sort method"
 msgstr ""
 
-msgctxt "#35111"
+msgctxt "#30311"
 msgid "None"
 msgstr ""
 
-msgctxt "#35112"
+msgctxt "#30312"
 msgid "Name"
 msgstr ""
 
-msgctxt "#35120"
+msgctxt "#30320"
 msgid "Sort direction"
 msgstr ""
 
-msgctxt "#35121"
+msgctxt "#30321"
 msgid "Ascending"
 msgstr ""
 
-msgctxt "#35122"
+msgctxt "#30322"
 msgid "Descending"
 msgstr ""
 
-msgctxt "#35130"
+msgctxt "#30330"
 msgid "View"
 msgstr ""
 
-msgctxt "#35131"
+msgctxt "#30331"
 msgid "List"
 msgstr ""
 
-msgctxt "#35132"
+msgctxt "#30332"
 msgid "Thumbnail"
 msgstr ""
 
-msgctxt "#35133"
+msgctxt "#30333"
 msgid "Picture"
 msgstr ""

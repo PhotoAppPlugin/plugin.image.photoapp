@@ -23,8 +23,10 @@ try:
     import xbmcvfs
 except ImportError:
     import shutil
+    file_copy = shutil.copyfile
     file_exists = os.path.exists
 else:
+    file_copy = xbmcvfs.copy
     file_exists = xbmcvfs.exists
 
 from resources.lib.photo_app_db import *
@@ -42,7 +44,7 @@ args = urlparse.parse_qs(sys.argv[2][1:])
 
 ICONS_PATH = os.path.join(resource_path, "icons")
 ICON_FOLDER = ICONS_PATH+"/folder.png"
-ICON_MOMENTS = ICONS_PATH+"/moments_.png"
+ICON_MOMENTS = ICONS_PATH+"/moments.png"
 ICON_ALBUMS = ICONS_PATH+"/albums.png"
 ICON_SLIDESHOWS = ICONS_PATH+"/slideshows.png"
 
@@ -68,6 +70,20 @@ class PhotoAppGUI:
 	
 	self.photo_app_db_file = self.photo_app_path + '/database/Library.apdb'
 	self.photo_app_picture_path = self.photo_app_path + '/Masters'
+
+        self.use_local_copy = addon.getSetting('use_local_copy')
+        if (self.use_local_copy == ""):
+            self.use_local_copy = "false"
+            addon.setSetting('use_local_copy', self.use_local_copy)
+
+	if (self.use_local_copy == "true"):
+	    database_copy = xbmc.translatePath(os.path.join(addon.getAddonInfo("Profile"), "Library.apdb"))
+            if ((not file_exists(database_copy)) or
+                (os.stat(self.photo_app_db_file).st_mtime > os.stat(database_copy).st_mtime)):
+	            print "photoapp.gui: Copy Photo Library Database..."
+	            print "photoapp.gui: from %s to %s" % (self.photo_app_db_file, database_copy)
+	            file_copy(self.photo_app_db_file, database_copy)
+	            self.photo_app_db_file = database_copy
 
 	self.db = None
 	self.view_mode = 0

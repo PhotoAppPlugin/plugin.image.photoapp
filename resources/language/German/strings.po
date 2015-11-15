@@ -40,6 +40,10 @@ msgctxt "#30210"
 msgid "Photo-Library"
 msgstr "Foto-Bibliothek"
 
+msgctxt "#30220"
+msgid "Make a local copy of the Photo-Library"
+msgstr "Erstelle eine lokale Kopie der Foto-Bibliothek"
+
 msgctxt "#30300"
 msgid "View"
 msgstr "Anzeige"
@@ -83,4 +87,3 @@ msgstr "Vorschaubilder"
 msgctxt "#30333"
 msgid "Picture"
 msgstr "Bild"
-

@@ -3,6 +3,7 @@
     <!-- General -->
     <category label="30200">
 	<setting id="photo_library_path" type="folder" source="" label="30210" default=""/>
+	<setting id="use_local_copy" type="bool" label="30220" default="false"/>
     </category>
 
     <!-- View -->
