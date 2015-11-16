@@ -78,12 +78,13 @@ class PhotoAppGUI:
 
 	if (self.use_local_copy == "true"):
 	    database_copy = xbmc.translatePath(os.path.join(addon.getAddonInfo("Profile"), "Library.apdb"))
-            if ((not file_exists(database_copy)) or
-                (os.stat(self.photo_app_db_file).st_mtime > os.stat(database_copy).st_mtime)):
-	            print "photoapp.gui: Copy Photo Library Database..."
-	            print "photoapp.gui: from %s to %s" % (self.photo_app_db_file, database_copy)
-	            file_copy(self.photo_app_db_file, database_copy)
-	            self.photo_app_db_file = database_copy
+            #if ((not file_exists(database_copy)) or
+            #    (os.stat(self.photo_app_db_file).st_mtime > os.stat(database_copy).st_mtime)):
+	    print "photoapp.gui: Copy Photo Library Database..."
+	    print "photoapp.gui: from %s to %s" % (self.photo_app_db_file, database_copy)
+	    file_copy(self.photo_app_db_file, database_copy)
+
+	    self.photo_app_db_file = database_copy
 
 	self.db = None
 	self.view_mode = 0
@@ -274,6 +275,8 @@ class PhotoAppGUI:
 	plugin.addDirectoryItem(addon_handle, url, item, True)
 
 	plugin.addSortMethod(addon_handle, plugin.SORT_METHOD_NONE)
+
+        self.view_mode = 500	    # Preview View
 
 	return 3
 
