@@ -1,3 +1,6 @@
+v1.0.2
+- 2015/11/15: Minor changes for repo upload.
+
 v1.0.1
 - 2015/11/15: Added Support for local copy of database.
 

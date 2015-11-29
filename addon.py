@@ -19,19 +19,13 @@ import xbmcgui as gui
 import xbmcplugin as plugin
 import xbmcaddon
 
-try:
-    import xbmcvfs
-except ImportError:
-    import shutil
-    file_copy = shutil.copyfile
-    file_exists = os.path.exists
-else:
-    file_copy = xbmcvfs.copy
-    file_exists = xbmcvfs.exists
+import xbmcvfs
+file_copy = xbmcvfs.copy
+file_exists = xbmcvfs.exists
 
 from resources.lib.photo_app_db import *
 
-addon = xbmcaddon.Addon(id="plugin.image.photoapp")
+addon = xbmcaddon.Addon()
 
 plugin_path = addon.getAddonInfo("path")
 resource_path = os.path.join(plugin_path, "resources")
