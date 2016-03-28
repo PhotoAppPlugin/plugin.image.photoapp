@@ -64,7 +64,7 @@ class PhotoAppGUI:
             self.photo_app_path = self.photo_app_path + '/'
         addon.setSetting('photo_library_path', self.photo_app_path)
 
-        self.photo_app_db_file = self.photo_app_path + 'Database/Library.apdb'
+        self.photo_app_db_file = self.photo_app_path + 'Database/apdb/Library.apdb'
         self.photo_app_picture_path = self.photo_app_path + '/Masters'
 
         self.use_local_copy = addon.getSetting('use_local_copy')
@@ -74,11 +74,11 @@ class PhotoAppGUI:
 
 	if (self.use_local_copy == "true"):
 	    database_copy = xbmc.translatePath(os.path.join(addon.getAddonInfo("Profile"), "Library.apdb"))
-            #if ((not file_exists(database_copy)) or
-            #    (os.stat(self.photo_app_db_file).st_mtime > os.stat(database_copy).st_mtime)):
-	    print "photoapp.gui: Copy Photo Library Database..."
-	    print "photoapp.gui: from %s to %s" % (self.photo_app_db_file, database_copy)
-	    file_copy(self.photo_app_db_file, database_copy)
+            if ((not file_exists(database_copy)) or
+                (xbmcvfs.Stat(self.photo_app_db_file).st_mtime() > os.stat(database_copy).st_mtime)):
+	        print "photoapp.gui: Copy Photo Library Database..."
+	        print "photoapp.gui: from %s to %s" % (self.photo_app_db_file, database_copy)
+	        file_copy(self.photo_app_db_file, database_copy)
 
 	    self.photo_app_db_file = database_copy
 
